@@ -1,0 +1,123 @@
+.parte-superior{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    right: 655px;
+    flex-direction: row-reverse;
+    
+}
+
+
+.parte-superior .cano{
+    
+    position: relative;
+    
+}
+
+
+
+
+
+.parte-superior .cano .borda{
+    height: 10%;
+    background: linear-gradient(to right,#32CD32
+    ,#FFD700);
+    position: relative;
+    border: solid 1px black;
+    padding: 40px;
+
+    
+}
+.parte-superior .cano .tampa{
+    position: absolute;
+    margin-left: -8px;
+    background: linear-gradient(to right,#32CD32,#FFD700);
+    border: solid 1px black;
+    padding:8px;
+    padding-left: 85px;
+
+    
+
+
+}
+
+
+
+
+.parte-inferior{
+        position: absolute  ;
+        display: flex;
+
+        width: 100%;
+        right: 654px;
+         height:100%;
+
+        flex-direction: column-reverse  ;
+        align-items: center
+    
+    
+
+}
+
+
+.parte-inferior .cano{
+
+
+    position: relative;     
+   
+}
+
+
+.parte-inferior .cano .borda{
+
+    position: relative;
+    height: 10%;
+    background: linear-gradient(to right,#32CD32
+    ,#FFD700);
+    position: relative;
+    border: solid 1px black;
+    padding: 40px;
+
+
+}
+
+.parte-inferior .cano .tampa{
+    position: absolute;
+    margin-left: -8px;
+    background: linear-gradient(to right,#32CD32,#FFD700);
+    border: solid 1px black;
+    padding:8px;
+    padding-left: 85px;
+  
+
+    
+
+
+}
+
+
+
+
+
+ <div wm-flappy>
+       
+            <div class="parte-superior">
+                <div class="cano">
+                    <div class="borda"></div>
+                    <div class="tampa"></div>
+                </div>
+             
+            </div>
+            <div class="parte-inferior">
+                <div class="cano">
+                    <div class="borda"></div>
+                    <div class="tampa"></div>
+    
+
+                </div>
+                
+
+            </div>
+        
+    </div>
