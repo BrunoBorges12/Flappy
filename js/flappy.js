@@ -9,7 +9,7 @@ let  atributoPersonalizado=document.querySelector('[wm-flappy]')
 let movimentacao = '307'
 
 //-80px ele vai desaparecer
-
+//fff 
 
 
 
