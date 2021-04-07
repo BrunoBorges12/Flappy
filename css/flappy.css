@@ -18,11 +18,13 @@
 
 
 .cano{
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
     height: 100%;
     position: relative;
+    left: 710px;
 }
 
 
@@ -34,7 +36,7 @@
     border: 1px solid black;
     height: 300%        ;
     width: 80px;
-    left: 90%;
+  
     background: linear-gradient(to right,#32CD32
     ,#FFD700);
 
@@ -53,7 +55,6 @@
     border: 1px solid black;
     height:100%;
     width: 80px;
-    left: 80%;
 
 }
 
@@ -99,6 +100,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    left: 490px;
 }
 
 
@@ -110,7 +112,7 @@
     border: 1px solid black;
     height: 300%        ;
     width: 80px;
-    left: 50%;
+   
     background: linear-gradient(to right,#32CD32
     ,#FFD700);
 
@@ -128,7 +130,6 @@
     border: 1px solid black;
     height:100%;
     width: 80px;
-    left: 50%;
 
 
 }
@@ -164,6 +165,84 @@
     ,#FFD700);
 
 }
+
+
+
+
+
+
+.cano3{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 249px;
+}
+
+
+
+.cano-superior3{
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    border: 1px solid black;
+    height: 300%        ;
+    width: 80px;
+   
+    background: linear-gradient(to right,#32CD32
+    ,#FFD700);
+
+}
+
+
+
+.cano-inferior3{
+    display: flex;
+    flex-direction: column-reverse;
+    
+    background: linear-gradient(to right,#32CD32
+    ,#FFD700);
+    position: relative;
+    border: 1px solid black;
+    height:100%;
+    width: 80px;
+
+
+}
+
+
+.espaço3{
+    position: relative;
+    
+    margin: 50px;
+    left: 50%;
+}
+
+
+.cano-superior3 .tampa{
+    position: relative;
+    border: 1px solid black;
+    width: 110px;
+    right: 15px;
+    top: -10px;
+  
+    height: 15px;
+    background: linear-gradient(to right,#32CD32
+    ,#FFD700);
+}
+.cano-inferior3 .tampa{
+    position: relative;
+    border: 1px solid black;
+    width: 110px;
+    height: 15px;
+    right: 15px;
+    top: 10px;
+    background: linear-gradient(to right,#32CD32
+    ,#FFD700);
+
+}
+
 
 
 .start{
