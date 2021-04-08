@@ -2,31 +2,26 @@
 let  cano1 = document.querySelector('.cano')
 let cano2= document.querySelector('.cano2')
 let cano3 = document.querySelector('.cano3')
-
-
 let canoS1= document.querySelector('.cano-superior')
 let canoS2= document.querySelector('.cano-superior2')
 let canoS3= document.querySelector('.cano-superior3')
-
-
+let body = document.querySelector('body')
+// botão de start e movimentação
 let andar = false
 let andar2 = false   
 let start =document.querySelector('.start')
 let  atributoPersonalizado=document.querySelector('[wm-flappy]')
 let objM= {cano1:710, movi(){return this.cano1-=1},cano2:490, movi2(){ return this.cano2-=1},cano3:249, movi3(){ return this.cano3-=1}}
 
-//movimentação dos canos
+canoS1.style.height= random(300,50) +'px'
+canoS2.style.height= random(100,15) +'px'
+canoS3.style.height= random(200,15) +'px'
+// movimentação do passáro 
 
+let passaro = document.querySelector('.imagem')
+let subirPassaro = false
 
-//-80px ele vai desaparecer
-//fff 
-
-canoS1.style.height= random(300,5) +'px'
-
-canoS2.style.height= random(300,5) +'px'
-canoS3.style.height= random(300,5) +'px'
-
-
+let movimentaçãoP= 307
 
 
 
@@ -34,7 +29,27 @@ start.onclick=function(e){
     start.style.display='none'
 
 
+    
+    body.onkeypress= function(e){
+      
+        subirPassaro =true
+        
+        if(subirPassaro){
+            setTimeout(()=>{
+                movimentaçãoP-=15
+                passaro.style.top= movimentaçãoP +'px'
+             
+                subirPassaro=false
+            },16)
+
+        }
+     
+
+
+    }
+
     setInterval(()=>{
+        
 
             objM.movi()
 
@@ -80,20 +95,21 @@ start.onclick=function(e){
 
         }
             
-
-            
-
-        
-        
-       
-         
-
     },16)
+
+    setInterval(() => {
+
+        if(subirPassaro === false){
+            movimentaçãoP+=5
+            passaro.style.top=movimentaçãoP +'px    '
+
+
+        }
+        
+
+        
+    },100);
    
-
-
-
-
 }
 
 
@@ -101,9 +117,3 @@ function random(max,min){
     return parseInt(Math.random() * (max- min )- min) 
 }
 
-
-    //setInterval(()=>{
-
-        //cano.style.height=`${random(300,5)}%`
-    // console.log(random(300,5))
-    //},500)
