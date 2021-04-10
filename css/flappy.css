@@ -1,282 +1,62 @@
+*{
+box-sizing: border-box;
+}
 
+@font-face {
+    font-family: 'pixel';
+    src: url('../fonts/Pixel.ttf');
 
+}
 
 
 [wm-flappy]{
     position: relative;
-    width: 55%;
-    height: 55%;
-     background-color: #56BCFC;
-     border: 2px solid #3D7CB6;
+    border: 5px solid dodgerblue;
+    height: 700px;
+    width: 1000px;
+    margin: 15px;
+    background: deepskyblue;
     overflow: hidden;
-    flex-flow: row nowrap;
-    z-index: 0;
-    display: flex;
-  
-   
-   }
+}
+.passaro {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+    bottom: 50%;
 
+}
 
 .cano{
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 600px
-}
-
-
-
-.cano-superior{
-    display: flex;
-    flex-flow: column nowrap;
-    position: relative;
-    border: 1px solid black;
-    height: 100% ;
-    width: 80px;
-
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-
-
-}
-
-
-
-.cano-inferior{
-    display: flex;
-    flex-direction: column-reverse;
-    
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-    position: relative;
-    border: 1px solid black;
-    height:100%;
-    width: 80px;
-
-}
-
-
-.espaço{
-    position: relative;
-    
-    margin: 50px;
-    left: 50%;
-}
-
-
-.cano-superior .tampa{
-    position: relative;
-    border: 1px solid black;
-    width: 110px;
-    right: 15px;
-    top: -10px;
-  
-    height: 15px;
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-}
-.cano-inferior .tampa{
-    position: relative;
-    border: 1px solid black;
-    width: 110px;
-    height: 15px;
-    right: 15px;
-    top: 10px;
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-
-}
-
-
-
-
-
-.cano2{
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 490px;
-}
-
-
-
-.cano-superior2{
-    display: flex;
-    flex-flow: column nowrap;
-    position: relative;
-    border: 1px solid black;
-    height: 300%        ;
-    width: 80px;
-   
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-
-}
-
-
-
-.cano-inferior2{
-    display: flex;
-    flex-direction: column-reverse;
-    
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-    position: relative;
-    border: 1px solid black;
-    height:100%;
-    width: 80px;
-
-
-}
-
-
-.espaço2{
-    position: relative;
-    
-    margin: 50px;
-    left: 50%;
-}
-
-
-.cano-superior2 .tampa{
-    position: relative;
-    border: 1px solid black;
-    width: 110px;
-    right: 15px;
-    top: -10px;
-  
-    height: 15px;
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-}
-.cano-inferior2 .tampa{
-    position: relative;
-    border: 1px solid black;
-    width: 110px;
-    height: 15px;
-    right: 15px;
-    top: 10px;
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-
-}
-
-
-
-
-
-
-.cano3{
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 249px;
-}
-
-
-
-.cano-superior3{
-    display: flex;
-    flex-flow: column nowrap;
-    position: relative;
-    border: 1px solid black;
-    height: 300%        ;
-    width: 80px;
-   
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-
-}
-
-
-
-.cano-inferior3{
-    display: flex;
-    flex-direction: column-reverse;
-    
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-    position: relative;
-    border: 1px solid black;
-    height:100%;
-    width: 80px;
-
-
-}
-
-
-.espaço3{
-    position: relative;
-    
-    margin: 50px;
-    left: 50%;
-}
-
-
-.cano-superior3 .tampa{
-    position: relative;
-    border: 1px solid black;
-    width: 110px;
-    right: 15px;
-    top: -10px;
-  
-    height: 15px;
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-}
-.cano-inferior3 .tampa{
-    position: relative;
-    border: 1px solid black;
-    width: 110px;
-    height: 15px;
-    right: 15px;
-    top: 10px;
-    background: linear-gradient(to right,#32CD32
-    ,#FFD700);
-
-}
-
-
-
-.start{
     position: absolute;
-    font-size: 40px;
-    top: 40%;
-    right: 70%;
-    background: tomato;
-    border-radius: 5%;
-    padding: 10px;
-    z-index: 999;
-
-    transition: all 2s ease;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.imagem{
-    position: absolute;
-    left: 40%;
-    top: 307px;
 
-}
-.imagem img{
-    position: relative;
-    height: 40px;
-   
 
-    z-index: 1;
+.canoS{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
 }
 
 
-.start:hover{
-    position: absolute;
-    background: blue;
-  
- 
+.canoS .tampa{
+        height: 30px;
+        width: 130px;
+        background: linear-gradient(90deg,#639301,#a5e82e);
+        border: 2px solid #000;
+    
 }
+.canoS .borda{
+    height: 100px;
+    width: 110px;
+    background: linear-gradient(90deg,#639301,#a5e82e);
+    border-left: 2px solid #000 ;
+    border-right: 2px solid #000;
 
+    
+}
